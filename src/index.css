@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components{
+    .login{
+        @apply h-screen bg-purple-600 flex items-center justify-center ;
+    }
+    .input{
+        @apply border-b border-b-slate-400 px-2 py-3 mb-2 focus:outline-none focus:ring-1 focus:ring-purple-500;
+    }
+    .navbar{
+        @apply flex items-center md:justify-between md:px-6 justify-center gap-2 py-6 h-12 border-b border-slate-200 sticky top-0 bg-white text-black z-50;
+    }
+    .item{
+        @apply flex items-center gap-4 py-2 lg:px-16 px-11;
+    }
+    .item:hover{
+        @apply bg-slate-100 cursor-pointer;
+    }
+    .menu{
+        @apply flex flex-col;
+    }
+    .height{
+        height: calc(100vh - 60px);
+    }
+    .height::-webkit-scrollbar{
+        display: none;
+    }
+    .scrollbar::-webkit-scrollbar{
+        display: none;
+    }
+
+    /* Right Bar */
+    .user{
+        @apply flex items-center gap-20 justify-between my-5;
+    }
+    .userInfo{
+        @apply flex items-center gap-2 relative ;
+    }
+    .imgRight{
+        @apply w-10 h-10 object-cover rounded-full ;
+    }
+    .buttons{
+        @apply flex gap-2;
+    }
+    .online{
+        @apply w-3 h-3 rounded-full bg-green-400 absolute top-0 left-7;
+    }
+
+    /* Post */
+    .post{
+        @apply bg-white rounded-2xl ;
+    }
 }
