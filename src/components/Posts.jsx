@@ -21,6 +21,15 @@ const Posts = () => {
         "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
       desc: "Tenetur iste voluptates dolorem rem commodi voluptate pariatur, voluptatum, laboriosam consequatur enim nostrum cumque! Maiores a nam non adipisci minima modi tempore.",
     },
+    {
+      id: 3,
+      name: "Alex Boy",
+      userId: 2,
+      profilePic:
+        "https://source.unsplash.com/500x700?man",
+      desc: "Tenetur iste voluptates dolorem rem commodi voluptate pariatur, voluptatum, laboriosam consequatur enim nostrum cumque! Maiores a nam non adipisci minima modi tempore. consequatur enim nostrum cumque! Maiores a nam non adipisci minima modi tempore.",
+      img: "https://source.unsplash.com/500x700?laptop"
+    },
   ];
 
   return (

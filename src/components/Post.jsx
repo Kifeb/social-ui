@@ -29,7 +29,7 @@ const Post = ({post}) => {
         </div>
         <div className="my-5">
           <p>{post.desc}</p>
-          <img src={post.img} alt="" className="w-full max-h-[500px] object-cover my-2"/>
+          <img src={post.img} alt="" className="w-full max-h-[300px] md:max-h-[600px] object-cover my-2"/>
         </div>
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-2 cursor-pointer text-sm" onClick={() => setLiked(!liked)}>

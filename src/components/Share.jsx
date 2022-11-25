@@ -16,26 +16,26 @@ const Share = () => {
           <input type="text" placeholder={`What's on your mind ${currentUser.name}?`} className="py-5 px-3 w-3/4 focus:border-teal-500 focus:outline-none focus:ring-1 focus:rounded-xl"/>
         </div>
         <hr />
-        <div className="flex items-center justify-between px-4">
-          <div className="flex items-center lg:gap-4 gap-6 my-5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4 my-5">
             <input type="file" className='hidden' />
             <label htmlFor="file">
-              <div className="flex items-center gap-2 flex-col cursor-pointer">
-                <img src={Image} alt="Image" className='h-5' />
-                <span className='text-xs'>Add Image</span>
+              <div className="flex items-center gap-2 lg:gap-4 flex-col lg:flex-row cursor-pointer">
+                <img src={Image} alt="Image" className='h-5 lg:h-8' />
+                <span className='text-xs lg:text-base'>Add Image</span>
               </div>
             </label>
-            <div className="flex items-center gap-2 flex-col cursor-pointer">
-              <img src={Map} alt="" className='h-5'/>
-              <span className='text-xs'>Add Place</span>
+            <div className="flex items-center gap-2 lg:flex-row flex-col cursor-pointer">
+              <img src={Map} alt="" className='h-5 lg:h-8'/>
+              <span className='text-xs lg:text-base'>Add Place</span>
             </div>
-            <div className="flex items-center gap-2 flex-col cursor-pointer">
-              <img src={Friend} alt="" className='h-5' />
-              <span className='text-xs'>Tag Friends</span>
+            <div className="flex items-center gap-2 flex-col lg:flex-row cursor-pointer">
+              <img src={Friend} alt="" className='h-5 lg:h-8' />
+              <span className='text-xs lg:text-base'>Tag Friends</span>
             </div>
           </div>
           <div className="right">
-            <button className='px-4 py-2 bg-blue-500 text-white rounded-xl'>Share</button>
+            <button className='lg:px-4 lg:py-2 px-2 py-1 bg-blue-500 text-white rounded-xl'>Share</button>
           </div>
         </div>
       </div>

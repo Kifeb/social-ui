@@ -5,7 +5,7 @@ import Posts from "../components/Posts"
 
 const Home = () => {
   return (
-    <div className='bg-slate-200 py-3 px-5'>
+    <div className='bg-slate-200 min-w-screen-mobile py-3 px-2'>
       <Stories />
       <Share />
       <Posts />

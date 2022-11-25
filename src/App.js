@@ -14,7 +14,6 @@ function App() {
 
   const {currentUser} = useContext(AuthContext)
 
-
   const Layout = () => {
     return (
     <div>

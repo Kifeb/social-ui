@@ -35,8 +35,8 @@ const Comments = () => {
         <div className="flex my-5 justify-between gap-5">
           <img src={comment.profilePicture} alt="" className='w-8 h-8 rounded-full bg-cover' />
           <div className="w-10/12">
-            <span className='font-bold'>{comment.name}</span>
-            <p>{comment.desc}</p>
+            <span className='font-bold text-sm md:text-base'>{comment.name}</span>
+            <p className='text-xs md:text-base'>{comment.desc}</p>
           </div>
           <span className="text-xs text-slate-500 flex items-center">1 hour ago</span>
         </div>

@@ -20,19 +20,19 @@ const Navbar = () => {
     <div className="navbar">
       <div className='flex items-center gap-4 lg:gap-8 cursor-pointer'>
         <Link to="/">
-          <span className='text-bold text-xl md:block hidden font-extrabold text-blue-900'>KIFEBSOCIAL</span>
+          <span className='text-bold text-xl md:block font-extrabold text-blue-900'>KIFEBSOCIAL</span>
         </Link>
         <HomeOutlinedIcon />
-        <WbSunnyOutlinedIcon />
+        <EmailOutlinedIcon />
         <GridViewOutlinedIcon />
-        <div className="flex flex-1 items-center gap-1 border border-slate-400 w-32  md:min-w-fit lg:w-[400px] rounded-md p-1">
+        <div className="flex-1 items-center gap-1 border border-slate-400 w-32  md:min-w-fit lg:w-[400px] rounded-md p-1 hidden md:flex">
           <SearchOutlinedIcon />
           <input type="text" placeholder='search...' className='focus:outline-none bg-transparent w-full text-slate-600' />
         </div>
       </div>
-      <div className="flex justify-around items-center gap-4 lg:gap-8 font-medium px-1  cursor-pointer">
+      <div className="justify-around items-center gap-4 lg:gap-8 font-medium px-1  cursor-pointer hidden md:flex">
         <PersonOutlinedIcon />
-        <EmailOutlinedIcon />
+        <WbSunnyOutlinedIcon />
         <NotificationsOutlinedIcon />
         <Link to={`/profile/${currentUser.id}`} className="flex items-center gap-2 font-medium">
           <img src={currentUser.profilePic} alt="" className='w-7 h-7 rounded-full object-cover' />

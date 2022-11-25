@@ -11,7 +11,7 @@ const RightBar = () => {
     <button className={`transition-all md:hidden fixed right-2`} onClick={() => setRightBar(!rightbar)}>
       <KeyboardDoubleArrowLeftIcon />
     </button>
-    <div className={`bg-slate-200 flex-3 md:sticky fixed top-14 height overflow-scroll z-30 transition-all ${rightbar ? '-right-96' : 'right-0'}`}>
+    <div className={`bg-slate-200 flex-3 md:sticky fixed top-14 height overflow-scroll z-30 transition-all ${rightbar ? 'right-0' : '-right-96'}`}>
       <div className="">
         <div className="py-4 px-6 mb-5 bg-white shadow-lg relative">
           <button className='absolute right-5 md:hidden' onClick={() => setRightBar(true)}>
